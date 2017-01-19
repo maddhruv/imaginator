@@ -1,0 +1,16 @@
+{
+  "name":"imaginator",
+  "short_name":"imaginator",
+  "start_url":"index.html",
+  "display":"standalone",
+  "orientation":"portrait",
+  "theme_color":"#ffc107",
+  "background-color":"#ff8f00",
+  "icons":[
+    {
+      "src":"assets/logo.png",
+      "sizes":"128x128",
+      "type":"image/png"
+    }
+  ]
+}
