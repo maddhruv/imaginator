@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle, #ffa000, #ffc107);
+}
+
+h1 {
+  margin-top: 35px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.mag, .mag-wrap {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mag {
+  overflow: hidden;
+  height: 600px;
+  padding: 40px;
+
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAwBSURBVHhe7djPapxlHIZhz8B1u1BBBa2gnp5uLPZgClaXboRiKe6kKVLQxAnGJNL8cVVbNHaSfH75OgtLW51O791cD1y7l9/65n1te+vuAABAR2ABAMSeCqzZ5p1h68fvAQB4CbPNjecH1kVc7e38NBwf7gEAsKSjg91hZ/ve1FLPBNZFfR0f7g9mZmZmtvzOz86G33a3ppZ6QWDtLZ6amZmZ2TITWGZmZmbxzk5PXy6w5sdfDydbnw4n29cAAJhdnZw92FjU0gqB9dfWJ8Mf37w+PPz2zdFbAADr7ebl0aVhfv/6opZWCKyT7c/HY28Mj777cPQRAMB6u31l9N4wP/xyUUsrBda1qdaeHP0YAGC93f5giqz54VeLWhJYAACvRmABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBATGABAMQEFgBALAms2dXh4c3L46H3FwcBANbYrXdH7wzzgxuLWlopsD4bA+vSePAisK4AAKy3Ma4e3Xp7DKwvFrW0QmCdPtgYHt+/Pn2DAQCsvYMbk7M/dxa1tEJgmZmZmdl/738D6/ej/cVTMzMzM1tq5+djYP384sA6OtidKgwAgOXMH/897P+6+fzAmm1uDDvb96YvLgAAlrM/+mX2w9RSzwTWk8i6M9UXAADL+3dcXXgqsAAAeHUCCwAgdXf4B9qYFHdEc910AAAAAElFTkSuQmCC");
+  background-position: center;
+}
+
+.quote {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  color: #FFEC42;
+
+  font-family: Oswald;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.byline {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+
+  color: #fff;
+
+  font-family: Montserrat;
+}
+.byline a {
+  color: #d6e8f5;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(28, 28, 28, 0.7);
+}
+
+.closebox {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  font-size: 50px;
+}
+
+.image {
+  position: fixed;
+  z-index: 1000;
+  top: 25px;
+  right: 70px;
+
+  display: none;
+
+  margin: 0 auto;
+}
+form {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.save{
+  font-family: 'Permanent Marker', cursive;
+}
+form h1 {
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  text-align: center;
+  color: #0288D1;
+  border-bottom: 1px solid #ccc;
+}
+form .row {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+form input[type="text"], form input[type="password"], form textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px 10px 90px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form textarea {
+  height: auto;
+  min-height: 200px;
+  padding: 50px 10px 10px 10px;
+}
+form input[type="text"] + label, form input[type="password"] + label, form textarea + label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: white;
+  background: #0288D1;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+}
+form textarea + label {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+form input[type="text"]:focus, form input[type="password"]:focus {
+  padding-left: 10px;
+}
+form textarea:focus {
+  padding-top: 10px;
+}
+form input[type="text"]:focus + label, form input[type="password"]:focus + label {
+  -webkit-transform: translateZ(0) translateX(-100%);
+          transform: translateZ(0) translateX(-100%);
+}
+form textarea:focus + label {
+  -webkit-transform: translateZ(0) translateY(-100%);
+          transform: translateZ(0) translateY(-100%);
+}
+form input[type="checkbox"], form input[type="radio"] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+}
+form input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #ccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form input[type="radio"] + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  -webkit-transform: translateZ(0) translate(-50%, -50%) scale(0);
+          transform: translateZ(0) translate(-50%, -50%) scale(0);
+}
+form input[type="radio"]:checked + label {
+  background: #0288D1;
+}
+form input[type="radio"]:checked + label:before {
+  -webkit-transform: translateZ(0) translate(-50%, -50%) scale(1);
+          transform: translateZ(0) translate(-50%, -50%) scale(1);
+}
+form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #ccc;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+form input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #0288D1;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9) 0.1s;
+  -webkit-transform: translateZ(0) scale(0);
+          transform: translateZ(0) scale(0);
+}
+form input[type="checkbox"] + label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  height: 26px;
+  width: 26px;
+  background: white;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+}
+form input[type="checkbox"]:checked + label {
+  background: #0288D1;
+}
+form input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 28px);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+form button {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: white;
+  border: none;
+  background: #0288D1;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  -webkit-transform: translateZ(0) translateX(0);
+          transform: translateZ(0) translateX(0);
+  z-index: 2;
+}
+form button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #01579B;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  -webkit-transform: translateZ(0) scale(0);
+          transform: translateZ(0) scale(0);
+  z-index: -1;
+}
+form button:hover:before, form button:focus:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+#buttons{
+  padding-top: 20px;
+  font-size: 40px;
+  color: #000;
+}
